@@ -12,7 +12,8 @@ export class PageCatalogComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  redirect() {
-    window.location.href = '/compra';
+  redirect(id = '') {
+    window.location.href = '/compra#' + id;
   }
+
 }

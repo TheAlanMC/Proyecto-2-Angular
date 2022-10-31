@@ -1,1 +1,55 @@
-<p>page-form works!</p>
+<div class="cart__container">
+    <h1 class="cart__title">Detalle de la Compra</h1>
+    <table class="cart__table">
+        <thead class="table__header">
+            <th></th>
+            <th>Producto</th>
+            <th>Precio</th>
+            <th>Descuento</th>
+            <th>Total</th>
+            <th></th>
+        </thead>
+        <tr>
+            <td class="cart__image cell--center"><img src={{imagePath}}></td>
+            <td class="cart__name cell--center">{{name}}</td>
+            <td class="cell--center">Bs. {{price}}</td>
+            <td class="cell--center">% {{discount}}.0</td>
+            <td class="cell--center">Bs. {{total}}</td>
+        </tr>
+
+    </table>
+    <h1 class="cart__title">Datos del Cliente</h1>
+    <div class="form__container">
+        <mat-form-field class="form__input" appearance="fill">
+            <mat-label>Nombres:</mat-label>
+            <input matInput>
+        </mat-form-field>
+        <mat-form-field class="form__input" appearance="fill">
+            <mat-label>Apellidos:</mat-label>
+            <input matInput>
+        </mat-form-field>
+    </div>
+    <div class="form__container">
+        <mat-form-field class="form__input" appearance="fill">
+            <mat-label>CI:</mat-label>
+            <input matInput>
+        </mat-form-field>
+        <mat-form-field class="form__input" appearance="fill">
+            <mat-label>Celular:</mat-label>
+            <input matInput>
+        </mat-form-field>
+    </div>
+    <div class="form__container">
+        <mat-form-field class="form__input" appearance="fill">
+            <mat-label>Correo Electrónico:</mat-label>
+            <input matInput>
+        </mat-form-field>
+        <mat-form-field class="form__input" appearance="fill">
+            <mat-label>Dirección:</mat-label>
+            <input matInput>
+        </mat-form-field>
+    </div>
+    <div class="form__submit">
+        <button mat-raised-button color="accent" (click)="sent()">Realizar Pedido</button>
+    </div>
+</div>

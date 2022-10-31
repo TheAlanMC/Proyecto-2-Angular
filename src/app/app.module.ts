@@ -34,6 +34,7 @@ import { PageCatalogComponent } from './page-catalog/page-catalog.component';
 import { PageFormComponent } from './page-form/page-form.component';
 import { PageContactUsComponent } from './page-contact-us/page-contact-us.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,6 +43,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     PageHomeComponent,
     PageCatalogComponent,
     PageContactUsComponent,
+    PageFormComponent,
   ],
   imports: [
     BrowserModule,
@@ -49,6 +51,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatIconModule,
+    MatFormFieldModule,
     [MaterialComponents]
   ],
   exports: [
