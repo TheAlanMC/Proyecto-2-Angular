@@ -12,4 +12,7 @@ export class PageCatalogComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  redirect() {
+    window.location.href = '/compra';
+  }
 }

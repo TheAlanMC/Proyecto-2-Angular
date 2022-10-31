@@ -12,8 +12,8 @@ export class PageHomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  redirect() {
-    window.location.href = '/catalogo';
+  redirect(id = '') {
+    window.location.href = '/catalogo#' + id;
   }
 
 }
