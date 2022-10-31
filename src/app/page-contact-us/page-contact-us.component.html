@@ -3,7 +3,7 @@
         <div class="location__container">
             <h1 class="page__title">Ubicación</h1>
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.068280140347!2d-68.11417988461972!3d-16.52265018860222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915f20ee187a3103%3A0x2f2bb2b7df32a24d!2sUniversidad%20Cat%C3%B3lica%20Boliviana!5e0!3m2!1sen!2sbo!4v1652926639487!5m2!1sen!2sbo"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30606.905598901354!2d-68.16382025637354!3d-16.482463190129923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915f21c9aabff749%3A0x2d5df2ff2c59e15b!2sUSM%20Motos%20La%20Paz!5e0!3m2!1ses-419!2sbo!4v1667182111009!5m2!1ses-419!2sbo"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
@@ -25,7 +25,8 @@
                     <textarea matInput placeholder="Déjanos tus comentarios y sugerencias"></textarea>
                 </mat-form-field>
             </div>
-            <div class="button__container"><button mat-raised-button color="accent">Enviar</button></div>
+            <div class="button__container"><button mat-raised-button color="accent" (click)="sent()">Enviar</button>
+            </div>
         </div>
     </div>
     <h1 class="page__title">Acerca de Nosotros</h1>
@@ -33,31 +34,38 @@
         <mat-card>
             <mat-card-header class="card__header">
                 <mat-card-title>Misión</mat-card-title>
-                <mat-card-subtitle>Desarrollar con transparencia y eficiencia la administración de la cadena productiva
-                    del cacao
-                    orgánico</mat-card-subtitle>
             </mat-card-header>
-            <img mat-card-image src="/assets/img/card1.jpg" alt="Cacao" class="card__image">
+            <img mat-card-image src="/assets/mision.jpg" alt="" class="card__image">
             <mat-card-content>
-                <p>
-                    Bajo principios de unidad, sostenibilidad, justicia social y equidad. Con recursos humanos propios
-                    formados bajo la filosofía del cooperativismo, cuyo fin es resolver las necesidades de las
-                    cooperativas afiliadas y sus socios. Contribuyendo al desarrollo Regional y Nacional.
+                <p class="product-card__content">
+                    Nuestra misión es ofrecer siempre a nuestros clientes productos de alta calidad, eficaces y al mejor
+                    precio.
+                    <br>
+                    Contando por supuesto con un asesoramiento experto para solucionar cualquier duda o problema.
+                    Como empresa también intentamos promover el espíritu motero destacando todas y cada una de sus
+                    ventajas.
+                    <br>
+                    Todo con el fin de dar solución a las necesidades de nuestros clientes, satisfaciendo y superando
+                    sus expectativas iniciales.
                 </p>
             </mat-card-content>
         </mat-card>
         <mat-card>
             <mat-card-header class="card__header">
                 <mat-card-title>Visión</mat-card-title>
-                <mat-card-subtitle>Constituirse competitivamente como una organización modelo del país.
-                </mat-card-subtitle>
             </mat-card-header>
-            <img mat-card-image src="/assets/img/card2.jpg" alt="Chocolate" class="card__image">
+            <img mat-card-image src="/assets/vision.jpg" alt="" class="card__image">
             <mat-card-content>
-                <p>
-                    Dentro la cadena productiva agro industrial del cacao orgánico y otros productos. Bajo criterios de
-                    sostenibilidad económica, social y medio ambiental. Satisfaciendo las necesidades de sus asociados y
-                    productores del rubro, con autogestión propia bajo la filosofía del cooperativismo.
+                <p class="product-card__content">
+                    Nuestra visión como empresa es conseguir ser referentes en el mercado de recambios de motos.
+                    <br>
+                    Ser una empresa respetada y fiable en el mercado, obteniendo el mayor grado de satisfacción de
+                    nuestros clientes gracias a nuestro trato y servicios intachables.
+                    <br>
+                    También conseguir ofrecer la mejor relación calidad-precio del mercado, trabajando día a día para
+                    que todos nuestros clientes obtengan los mejores productos y últimas novedades.
+                    <br>
+                    Y por último, y más importante, crear un vínculo de confianza entre la empresa y nuestros clientes.
                 </p>
             </mat-card-content>
         </mat-card>
@@ -69,13 +77,13 @@
                 <mat-icon>facebook</mat-icon>
             </button>
             <button mat-fab color="accent">
-                <mat-icon>whatsapp</mat-icon>
+                <mat-icon>share</mat-icon>
             </button>
             <button mat-fab color="accent">
-                <mat-icon>facebook</mat-icon>
+                <mat-icon>public</mat-icon>
             </button>
             <button mat-fab color="accent">
-                <mat-icon>whatsapp</mat-icon>
+                <mat-icon>motorcycle</mat-icon>
             </button>
         </div>
     </div>

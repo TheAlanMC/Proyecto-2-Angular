@@ -12,9 +12,9 @@
         <tr>
             <td class="cart__image cell--center"><img src={{imagePath}}></td>
             <td class="cart__name cell--center">{{name}}</td>
-            <td class="cell--center">Bs. {{price}}</td>
+            <td class="cell--center">Bs. {{price | number: '.2'}}</td>
             <td class="cell--center">% {{discount}}.0</td>
-            <td class="cell--center">Bs. {{total}}</td>
+            <td class="cell--center">Bs. {{total | number: '.2'}}</td>
         </tr>
 
     </table>

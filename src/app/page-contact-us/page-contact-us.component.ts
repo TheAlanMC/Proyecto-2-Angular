@@ -12,4 +12,8 @@ export class PageContactUsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  sent(): void {
+    alert('Comentario enviado con éxito');
+  }
+
 }

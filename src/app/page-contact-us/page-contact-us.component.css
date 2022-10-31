@@ -56,3 +56,7 @@
     justify-content: space-evenly;
     margin: 2rem auto;
 }
+
+.product-card__content {
+    text-align: justify;
+}
